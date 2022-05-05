@@ -2,17 +2,23 @@
 
 <head>
 <meta charset='UTF-8'>
-<link rel="stylesheet" type="text/css" href="css/MainTheme.css">
-<link rel="icon" type="image/x-icon" href="images/JGT Favicon L.ico">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="MainTheme.css">
+<link rel="icon" type="image/x-icon" href="JGT%20Favicon%20L.ico">
 <script src="https://kit.fontawesome.com/bcbf40dc3d.js" crossorigin="anonymous"></script>
 <title>JGT Home</title>
+<script type="text/javascript">
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);	
+}
+</script>
 </head>
+
 <body>
 
 <table border="1" width="100%" style="margin-top: 3px;">
 	<tr>
 		<th width="110"> 
-		<a href="Home Page.htm" style="text-decoration: none">
+		<a href="Home%20Page.htm" style="text-decoration: none">
 		<h1><div class="header-hover"><i class="fas fa-home" style="font-size:13pt; color:#BD1B90"></i> Home </div>
 		</h1> 
 		</a>
@@ -22,11 +28,12 @@
 		<h3 style="font-size: 13pt; text-align: center">JGT - Discover the 
 		possibilities</h3>
 		</th>
-		<th width="110"> <h1><i class="far fa-lightbulb" style="font-size:13pt; color:#BD1B90"></i> 
-		<a href="Home Page - Dark Mode.htm" style="color: #1E1964; text-decoration: none">Theme </a> </h1> </th>
+		<th width="110"><i class="fa-solid fa-book" style="font-size:13pt; color:#BD1B90"></i> 
+		<button class="theme" onclick="swapStyleSheet('DarkTheme.css')">Theme</button>
+		</th>
 		<th width="125"> <h1><i class="fa-solid fa-language" style="font-size:13pt; color:#BD1B90"></i> Translate</h1> </th>
 		<th width="140"> 
-		<a href="locations.html" style="text-decoration: none">
+		<a href="#" style="text-decoration: none">
 		<h1><div class="header-hover"><i class="fa-solid fa-map-location" style="font-size:13pt; color:#BD1B90"></i> Our Locations</div>
 		</h1> 
 		</a>
@@ -35,15 +42,15 @@
 	</tr>
 </table>
 
-<table width="100%">
+<table width="100%" style="background-color: #F5F4EF">
 	<tr>
 		<td max-width="216" width="216" rowspan="2" style="background-color: #F5F4EF; border-style: none">
-		<img border="0" src="images/JGT Logo L.png" width="216" height="82" alt="JGT Logo"></td>
+		<img border="0" src="JGT%20Logo%20L.png" width="216" height="82" alt="JGT Logo"></td>
 		<td rowspan="2" style="background-color: #F5F4EF;">
 		<div class="container">
 			<form action="" class="search-bar">
 				<input type="text" placeholder="What are you looking for ?" name="q">
-				<button type="submit"><img src="images/Search.png"></button>
+				<button type="submit"><img src="Search.png"></button>
 			</form>
 		</div>
         </td>
@@ -51,7 +58,7 @@
 		<h1 style="background-color:#F5F4EF; text-align:center"><i class="far fa-heart" style="font-size:13pt; color:#BD1B90"></i> TBR</h1>
 		</td>
 		<td width="150" style="background-color: #F5F4EF;">
-		<a href="log.html" style="text-decoration: none">
+		<a href="#" style="text-decoration: none">
                <h1 style="background-color:#F5F4EF; text-align:center">
                <div class="account-hover"><i class="fa-solid fa-user" style="font-size:13pt; color:#BD1B90"></i> Login</div>
                </h1>
@@ -60,7 +67,7 @@
 	</tr>
 	<tr>
 		<td width="150" style="background-color: #F5F4EF;">
-		<a href="sign.html" style="text-decoration: none">
+		<a href="#" style="text-decoration: none">
 		<h1 style="background-color:#F5F4EF; text-align:center">
 		<div class="account-hover"><i class="fa-solid fa-user-plus" style="font-size:13pt; color:#BD1B90"></i> Sign Up</div>
         </h1>
@@ -74,17 +81,17 @@
 		<td width="76">
 		<h1><i class="fa-solid fa-bars" style="font-size:13pt; color:#BD1B90"></i> Menu</h1> 
 		</td>
-		<td width="28" style="background-color: #F5F4EF; border-style: none"></td>
+		<td width="28" style="background-color: rgba(0, 0, 0, 0); border-style: none"></td>
 		<td width="100"> <h1 style="text-align: left"> &nbsp;View All </h1> </td>
 		<td width="155"> <h1 style="text-align: left"> &nbsp;View By Genre </h1> </td>
 		<td width="146"> <h1 style="text-align: left"> &nbsp;Most Popular </h1> </td>
 		<td width="143"> <h1 style="text-align: left"> &nbsp;New Arrivals </h1> </td>
 		<td width="144"> <h1 style="text-align: left"> &nbsp;Coming Soon </h1> </td>
-		<td style="background-color: #F5F4EF; border-style: none"></td>
+		<td style="background-color: rgba(0, 0, 0, 0); border-style: none"></td>
 	</tr>
 </table>
 
-<table border="1" width="100%" style="background-color: #B8D8E3">
+<table border="1" width="100%" style="background-color: rgba(0, 0, 0, 0)">
 	<tr>
 		<th width="210" style="background-color: #F5F4EF"> 
 			<h1 style="color: #BD1B90; background-color: #F5F4EF">In a hurry? Take a shortcut <i class="fa-solid fa-angles-right" style="font-size:13pt; color:#BD1B90"></i></h1> 
@@ -98,7 +105,7 @@
             </a>
         </td>
 		<td width="204" style="border-color: #F5F4EF; background-color: #F5F4EF;">
-			<a href="audio.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+			<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="shortcut-hover">
 			<p style="text-align: center">Audio Books</p>
@@ -106,7 +113,7 @@
             </a>
 			</td>
 		<td width="204" style="border-color: #F5F4EF; background-color: #F5F4EF;">
-			<a href="biography_intro.htm" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+			<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="shortcut-hover">
 			<p style="text-align: center">Autobiographies</p>
@@ -114,7 +121,7 @@
         </a>
         </td>
 		<td width="204" style="border-color: #F5F4EF; background-color: #F5F4EF;">
-			<a href="novels.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+			<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="shortcut-hover">
 			<p style="text-align: center">YA &amp; NA Novels</p>
@@ -122,7 +129,7 @@
             </a>
 		</td>		
 	    <td width="204" style="border-color: #F5F4EF; background-color: #F5F4EF;">
-			<a href="qoutes.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+			<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="shortcut-hover">
 			<p style="text-align: center"></i> Quotes</p>
@@ -133,7 +140,7 @@
 </table>
 
 <div align="center">
-<table width="96%" style="border-collapse: collapse, background-color : #B8D8E3; background-color:#B8D8E3; margin: 3px 0px 3px 0px;">
+<table width="96%" style="border-collapse: collapse, background-color: rgba(0, 0, 0, 0); margin: 3px 0px 3px 0px;">
 	<tr>
 		<td style="border-color: #F5F4EF; background-color: #F5F4EF">
 		<h3 style="text-align: center">A reader lives a thousand lives before he dies . . . The man who never reads lives only one. - George R.R. Martin</h3>
@@ -143,7 +150,7 @@
 </div>
 
 <div align="center">
-	<table border="1" width="96%" style="border-color: #B8D8E3; background-color: #F5F4EF; margin: 3px 0px 3px 0px;">
+	<table border="1" width="96%" style="border-color: #B8D8E3; background-color: rgba(0, 0, 0, 0); margin: 3px 0px 3px 0px;">
 		<tr>
 			<td style="border-color: #F5F4EF; background-color: #B8D8E3" width="75%">
 			<p>
@@ -160,7 +167,7 @@
 		access the services and resources they rely on.</p>
 			</td>
 			<td style="border-color: #F5F4EF; background-color: #B8D8E3" max-width="34%" width="24%">
-			<img border="0" src="images/JGT Library Interior.jpg" width="320" height="194" alt="Picture of JGT interior" style="border: 1px solid #B8D8E3"></td>
+			<img border="0" src="JGT%20Library%20Interior.jpg" width="320" height="194" alt="Picture of JGT interior" style="border: 1px solid #B8D8E3"></td>
 		</tr>
 		<tr>
 			<td colspan="2" style="border-color: #F5F4EF; border-radius: 5px; background-color: #B8D8E3"><p>
@@ -176,18 +183,18 @@
 </div>
 
 <div align="center">
-	<table border="1" width="96%" style="background-color: #B8D8E3; margin: 3px 0px 3px 0px;">
+	<table border="1" width="96%" style="background-color: rgba(0, 0, 0, 0); margin: 3px 0px 3px 0px;">
 		<tr>
 			<td style="border-color: #F5F4EF; background-color: #F5F4EF" width="418">
 			<p>Check out our friends at ZLibrary for free e-books <i class="fa-solid fa-angles-right" style="font-size:13pt; color:#BD1B90"></i></p> 
 			</td>
 			<td style="border-color: #F5F4EF; background-color: #F5F4EF" width="144">
 			<a target="_blank" href="https://z-lib.org/">
-			<img border="0" src="images/ZLibrary Logo.png" width="144" height="60" alt="ZLibrary Logo"></a></td>
-			<td style="border-color: #B8D8E3; background-color: #B8D8E3" width="16"></td>
+			<img border="0" src="ZLibrary%20Logo.png" width="144" height="60" alt="ZLibrary Logo"></a></td>
+			<td style="border-color: rgba(0, 0, 0, 0); background-color: rgba(0, 0, 0, 0)" width="16"></td>
 			<td style="border-color: #F5F4EF; background-color: #F5F4EF" width="172">
 			<a target="_blank" href="https://www.whatshouldireadnext.com/">
-			<img border="0" src="images/WSIRN.png" width="172" height="60"></a></td>
+			<img border="0" src="WSIRN.png" width="172" height="60"></a></td>
 			<td style="border-color: #F5F4EF; background-color: #F5F4EF">
 			<p><i class="fa-solid fa-angles-left" style="font-size:13pt; color:#BD1B90"></i> Tinder for books. Get matched with the perfect book for 
 			you now.</p>
@@ -197,10 +204,10 @@
 </div>
 
 <div align="center">
-	<table border="1" border="1" width="96%" style="border-color: #B8D8E3; background-color: #F5F4EF; margin: 3px 0px 3px 0px;">
+	<table border="1" border="1" width="96%" style="border-color: #B8D8E3; background-color: rgba(0, 0, 0, 0); margin: 3px 0px 3px 0px;">
 		<tr>
 			<td style="border-color: #F5F4EF; background-color: #B8D8E3" width="320">
-			<img border="0" src="images/Student Benefits Section.jpg" width="320" height="200" alt="Picture of books stacked to make a circular frame"></td>
+			<img border="0" src="Student%20Benefits%20Section.jpg" width="320" height="200" alt="Picture of books stacked to make a circular frame"></td>
 			<td style="border-color: #F5F4EF; background-color: #B8D8E3">
 			<p>Be sure to sign up for our Student Benefits program that launches in 2 weeks time. 
 			Being an SB member grants you access to the library's private hall, free 24/7 WiFi, free coffee and pastries from the cafeteria, earn gift certificates, discounts on course materials and much more!
@@ -217,7 +224,7 @@
 </div>
 
 <div align="center">
-<table width="96%" style="border-collapse: collapse, background-color: #B8D8E3; background-color:#B8D8E3; margin: 3px 0px 3px 0px;">
+<table width="96%" style="border-collapse: collapse,background-color: rgba(0, 0, 0, 0); margin: 3px 0px 3px 0px;">
 	<tr>
 		<td style="border-color: #F5F4EF; background-color: #F5F4EF">
 		<h3 style="text-align: center">The more that you read, the more things you will know. The more that you learn, the more places you'll go. - Dr. Seuss</h3>
@@ -231,19 +238,19 @@
 	<tr>
 		<td width="20%">
 		<h4>Customer Care  <i class="fa-solid fa-handshake" style="font-size:13pt; float:right; margin-right: 3px; color:#BD1B90"></i> </h4>
-		<a href="ask.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+		<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="footer-hover">
                <h2>Ask a Question </h2>
                </div>
         </a>
-		<a href="feed.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+		<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="footer-hover">
                <h2>Send Us Your Feedback</h2>
                </div>
         </a>
-		<a href="more.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+		<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="footer-hover">
                <h2>More About You</h2>
@@ -254,7 +261,7 @@
 		<td width="15%">
 		<h4>Discover JGT  <i class="fa-solid fa-magnifying-glass" style="font-size:13pt; float:right; margin-right: 3px; color:#BD1B90"></i> </h4>
 		<h2>Library Guide</h2>
-		<a href="locations.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+		<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="footer-hover">
                <h2>Our Locations</h2>
@@ -266,18 +273,18 @@
 		<td width="15%">
 		<h4>JGT Services  <i class="fa-solid fa-book" style="font-size:13pt; float:right; margin-right: 3px; color:#BD1B90"></i> </h4>
 		<h2>JGT Rewards</h2>
-		<a href="letbook.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
-		bold; text-decoration: none">
-		<div class="footer-hover">
-		<h2>Recommend a Book</h2>
-		</div>
+		<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+               bold; text-decoration: none">
+               <div class="footer-hover">
+               <h2>Recommend a Book</h2>
+               </div>
         </a>
 		<h2>JGT Discount Card</h2>
 		<h2>Student Benefits</h2>
 		<td width="20%">
 		<h4>About JGT  <i class="fa-solid fa-circle-info" style="font-size:13pt; float:right; margin-right: 3px; color:#BD1B90"></i> </h4>
 		<h2>Our Story</h2>
-		<a href="vision.html" style="font-family: Times New Roman; color: #1E1964; font-weight: 
+		<a href="#" style="font-family: Times New Roman; color: #1E1964; font-weight: 
                bold; text-decoration: none">
                <div class="footer-hover">
                <h2>Our Vision</h2>
@@ -287,7 +294,7 @@
 		<h2>News and Events</h2>
 		<td width="30%">
 		<h4>A world of books for young and old</h4>
-		<h1 style="text-align: left; background-color:#EFE4E6">Follow JGT</h1>  
+		<h2 style="font-family: Berlin Sans FB, Franklin Gothic Medium, sans-serif; font-weight: normal;font-size: 13pt">Follow JGT</h2>  
 		<h2 style="font-size: 17pt">
 		<div class="social">
 		<a target="blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>           
