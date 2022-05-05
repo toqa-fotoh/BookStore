@@ -3,11 +3,16 @@
 <head>
 <meta charset='UTF-8'>
 <link rel="stylesheet" type="text/css" href="css/mainc.css">
-<!-- <link rel="icon" type="image/x-icon" href="file:///D:/JGT/favicon (4).ico"> -->
+<link rel="icon" type="image/x-icon" href="images/JGT Favicon L.ic">
 <script src="https://kit.fontawesome.com/bcbf40dc3d.js" crossorigin="anonymous"></script>
 <title>JGT login</title>
 <link rel = "stylesheet" type = "text/css" href = "css/gannac.css" >
 <script src = "java/gannaj.js"> </script>
+	<script type="text/javascript">
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);	
+}
+</script>
 </head>
 
 <body>
@@ -24,7 +29,9 @@
 		<h3 style="font-size: 13pt; text-align: center">JGT - Discover the 
 		possibilities</h3>
 		</th>
-		<th width="110"> <h1 class="tasnim"><i class="far fa-lightbulb" style="font-size:13pt; color:#BD1B90"></i> Theme </h1> </th>
+		<th width="110"><i class="fa-solid fa-book" style="font-size:13pt; color:#BD1B90"></i> 
+		<button class="theme" onclick="swapStyleSheet('css/DarkTheme.css')">Theme</button>
+		</th>
 		<th width="125"> <h1 class="tasnim"><i class="fa-solid fa-language" style="font-size:13pt; color:#BD1B90"></i> Translate</h1> </th>
 		<th width="140"> 
 		<a href="locations.html" style="text-decoration: none">
@@ -206,11 +213,29 @@
 		<a target="blank" href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
 		</div>
 		</h2>
-		<h4>Subscribe to our newsletter</h4>
-		<form>
-  		  <input id="email" name="email" dir="ltr" size="25" style="font-family: Times New Roman; font-size: 17pt; color: #1E1964; border: 1px solid #1E1964; padding: 1px 4px 1px 4px; margin-top: 5px;"> 
-			<input type="submit" value="Subscribe " style="border:3px solid #EFE4E6; padding:0; font-family: Berlin Sans FB; font-size: 12pt; color:#BD1B90; background-color:#EFE4E6; margin-bottom: 4px; margin-left: 13px">
+		<h4 style="text-align: center">Subscribe to our newsletter</h4>
+		<div class="e-mail">
+		<form onsubmit="sendEmail(); reset(); return false;"> 
+		<input type="email" id="email" placeholder="Enter Your E-Mail" required>
+		<button type="submit">Subscribe</button>
 		</form>
+		</div>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			function sendEmail(){
+				Email.send({
+					Host : "smtp.elasticemail.com",
+					Username : "Tasneem_20210238@fci.helwan.edu.eg",
+					Password : "800F4EFB1045EF004AEDB06FDE14E127D6BD",
+					To : 'JGTPublicLibrary@gmail.com',
+					From : document.getElementById("email").value,
+					Subject : "New Newsletter Subscription",
+					Body : "I would like to subscribe to your newsletter.",
+				}).then(
+				  message => alert("Email Sent Successfully")
+				);
+			}
+		</script>
 		</td>
 	</tr>
 	<tr>
