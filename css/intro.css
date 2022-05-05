@@ -1,5 +1,4 @@
 body{
-    margin-bottom: 20px;
     background-image:url(../images/library.jpg);
   background-size: cover;
     height: 1700px;
@@ -26,7 +25,6 @@ body{
 .charles{
     width: 300px;
     height: 400px;
-    background-color: transparent;
     border-left: 20px solid #9db0cebb;
     border-right: 20px solid #9db0ceb5;
     margin-top: 76px;
@@ -35,17 +33,15 @@ body{
 .shaks{
     width: 300px;
     height: 400px;
-    background-color: transparent;
     border-left: 20px solid #9db0ceb4;
     border-right: 20px solid #9db0ceb3;
     margin-left: 700px;
-    margin-top: -418px;
+    margin-top: -404px;
 }
 
 .emily{
     width: 300px;
     height: 400px;
-    background-color:transparent;
     border-left: 20px solid  #9db0ceb5;
     border-right: 20px solid  #9db0ceb4;
     margin-top: 167px;
@@ -54,7 +50,6 @@ body{
 .shawky{
     width: 300px;
     height: 400px;
-    background-color: transparent;
     border-left: 20px solid  #9db0cebc;
     border-right:  20px solid  #9db0cead;
     margin-left: 700px;
