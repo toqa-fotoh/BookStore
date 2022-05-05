@@ -13,7 +13,7 @@ h4           { font-family: Berlin Sans FB, Franklin Gothic Medium, sans-serif; 
                 font-weight:normal; margin-top:0; margin-bottom:0; margin-right: 3px; background-color: #E6CED0 }
 
 p            { font-family: Times New Roman, Bodoni MT, serif; font-size: 13pt; color: #1E1964; font-weight: 
-               bold; text-indent: 9; text-align: left; line-height: 150% }
+               bold; text-indent: 9; text-align: left; line-height: 150%; margin-left: 3px; }
                
 table        { background-color: #F5F4EF; border-style: none;  }
 
@@ -54,3 +54,15 @@ td			 { border:1px solid #E6C3D0; border-radius: 5px; background-color: #E6CED0;
 .social a {color: #1E1964; text-decoration: none;}
 
 .social a:hover {color: #BD1B90;}
+
+.e-mail {width: 100%; height: 20px; background-color: #E6CED0; display: flex; align-items: center; justify-content: center; padding: 8px 0px 5px 0px;}
+
+form {padding: 10px 0px 16px 0px; } 
+
+form input {width: 230px; height: 25px; border:0; outline: none; padding-left: 3px;}
+
+form button {font-family: Berlin Sans FB, Franklin Gothic Medium, sans-serif; font-size: 12pt; color: #BD1B90; 
+				background-color: #EFE4E6; border: 0; outline: none; cursor: pointer; padding: 2px;}
+
+.theme {font-family: Berlin Sans FB, Franklin Gothic Medium, sans-serif; font-size: 13pt; color: #1E1964; text-align: center; 
+                font-weight:normal; margin-top:0; margin-bottom:0; background-color: #E6CED0; border: none; cursor: pointer;}
