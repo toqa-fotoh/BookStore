@@ -27,7 +27,6 @@ hr{
 }
 .form{
     margin-top: 30px;
-    padding-top: 13px;
     padding-left: 128px;
 
 
@@ -68,7 +67,7 @@ input[type="radio"]{
     font-size: x-large;
     border-radius: 50px;
     border-style: hidden;
-    transition: all 0.3s ease;    
+    transition: 0.3s;    
 }
 .button:hover{
     background-color:rgba(233, 133, 150, 0.85);
@@ -79,7 +78,7 @@ input[type="radio"]{
 margin-bottom: 20px;
 }
 .footeer{
-    width: 1450px;
+    width: 1350px;
 }
 .headd{
     width: 1350px;
